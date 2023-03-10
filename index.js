@@ -1,19 +1,21 @@
 'use strict';
 const OPT = {
-    "user" : "admin", //后台密码
-    "password" : "yourSelfPwd", //后台密码
+	"user" : "username", //后台密码
+    "password" : "password", //后台密码
     "siteDomain" : "blog.gezhong.vip",// 域名(不带https 也不带/)
-    "siteName" : "CF workers blog",//博客名称
+    "siteName" : "CF Blog",//博客名称
     "siteDescription":"A Blog Powered By Cloudflare Workers and KV",//博客描述
     "keyWords":"cloudflare,KV,workers,blog",//关键字
-    "cacheZoneId":"cc868e8edce4027ad4a735741111111",//清理缓存用 cf区域 ID
-    "cacheToken":"LNxRWH-MPMIGnp8qhyT8FUsjDRN6tdOnmaaaaaaa",//清理缓存用 cf API token
+    "cacheZoneId":"722545075692ae552d067239050d472c",//清理缓存用 cf区域 ID
+    "cacheToken":"Pg1TZZscVzWpMgyIaKfdZjpMF8DGE1fHFfG6GEIG",//清理缓存用 cf API token
 	
     "pageSize" : 5,//每页文章数
     "recentlySize" : 6,//最近文章数
     "readMoreLength":150,//阅读更多截取长度	
     "cacheTime" : 60*60*24*0.5, //网页缓存时长(秒),建议=文章更新频率
-    "themeURL" : "https://gcore.jsdelivr.net/gh/gdtool/cloudflare-workers-blog@master/themes/default2.0/", // 模板地址,以 "/"" 结尾
+    //"themeURL" : "https://gcore.jsdelivr.net/gh/spanishathlete/cfblog@tree/master/themes/default2.0/", // 模板地址,以 "/"" 结尾
+	"themeURL" : "https://gcore.jsdelivr.net/gh/spanishathlete/cfblog@tree/master/themes/JustNews/",
+	
     "html404" : `<b>404</b>`,//404页面代码
     "codeBeforHead":``,//其他代码,显示在</head>前
     "codeBeforBody":``,//其他代码,显示在</body>前
